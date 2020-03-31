@@ -15,7 +15,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className='navbar is-fixed-top' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <strong>Gatsby Starter Business</strong>
+            <strong>Papergram's Blog</strong>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -32,10 +32,10 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <div className='navbar-end'>
             <SearchBox searchIndex={data.siteSearchIndex.index} />
             <Link className='navbar-item' to='/about'>
-                            About
+                            A propos
             </Link>
             <Link className='navbar-item' to='/pricing'>
-                            Pricing
+                            Tarifs
             </Link>
             <Link className='navbar-item' to='/blog'>
                             Blog
@@ -46,7 +46,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                   <Link
                     className='button is-primary is-outlined'
                     to='/contact'>
-                            Contact Us
+                            Nous Contacter
                   </Link>
                 </p>
               </div>

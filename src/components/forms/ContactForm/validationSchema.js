@@ -2,14 +2,14 @@ import * as Yup from 'yup'
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Name is Required!'),
+    .min(2, 'Trop court !')
+    .max(50, 'Trop long !')
+    .required('Le Nom est requis !'),
   email: Yup.string()
-    .email('Enter a Valid Email!')
-    .required('Email is Required!'),
+    .email('Veuillez entrer un e-mail valide !')
+    .required('E-mail requis !'),
   message: Yup.string()
-    .required('Message is Required!'),
+    .required('Message requis!'),
 })
 
 export default validationSchema

@@ -47,7 +47,7 @@ const ContactForm = () => {
         data-netlify-honeypot='bot-field'
       >
         <div className='field'>
-          <label className='label'>Name</label>
+          <label className='label'>Nom</label>
           <div className='control'>
             <Field className='input' type='text' placeholder='Full Name' name='name' id='name' />
           </div>
@@ -55,7 +55,7 @@ const ContactForm = () => {
         </div>
 
         <div className='field'>
-          <label className='label'>Email</label>
+          <label className='label'>E-mail</label>
           <div className='control'>
             <Field className='input' type='email' placeholder='Email' name='email' id='email' />
           </div>
@@ -72,10 +72,10 @@ const ContactForm = () => {
 
         <div className='field is-grouped is-pulled-right'>
           <div className='control'>
-            <button className='button' type='reset'>Clear</button>
+            <button className='button' type='reset'>Effacer</button>
           </div>
           <div className='control'>
-            <button className='button is-primary' type='submit' disabled={isSubmitting}>Submit</button>
+            <button className='button is-primary' type='submit' disabled={isSubmitting}>Envoyer</button>
           </div>
         </div>
       </form>)}
